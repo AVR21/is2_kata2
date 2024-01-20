@@ -3,10 +3,10 @@ public class StudentData {
     private double timeStudy;
     private double marks;
 
-    public StudentData(double numberCourses, double timeStudy, double marks) {
-        this.numberCourses = numberCourses;
-        this.timeStudy = timeStudy;
-        this.marks = marks;
+    public StudentData(double[] data) {
+        this.numberCourses = data[0];
+        this.timeStudy = data[1];
+        this.marks = data[2];
     }
 
     @Override
