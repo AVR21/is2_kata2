@@ -38,7 +38,7 @@ public class CSVStudentDataLoader implements StudentDataLoader{
 
     public static TreeMap<Double, Integer> dataCount(List<Double> data) {
         TreeMap<Double, Integer> resumen = new TreeMap<>();
-        data.forEach(i -> resumen.merge(i, null, Integer::sum));
+        data.forEach(i -> resumen.merge(i, 1, Integer::sum));
         return resumen;
     }
 
